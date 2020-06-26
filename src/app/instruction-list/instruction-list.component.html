@@ -1,0 +1,46 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Instruction List</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+            <th>secacc</th>
+            <th>id_client</th>
+            <th>id_transaction</th>
+            <th>instrument</th>
+            <th>quantity</th>
+            <th>price</th>
+            <th>Id_currency</th>
+            <th>Isin</th>
+            <th>tradeDate</th>
+            <th>settlementDate</th>
+            <th>transactionType</th>
+            <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let instruction of instructions | async">
+          <td>{{instruction.secacc}}</td>
+          <td>{{instruction.id_client}}</td>
+          <td>{{instruction.id_transaction}}</td>
+          <td>{{instruction.firstName}}</td>
+          <td>{{instruction.instrument}}</td>
+          <td>{{instruction.quantity}}</td>
+          <td>{{instruction.price}}</td>
+          <td>{{instruction.Id_currency}}</td>
+          <td>{{instruction.Isin}}</td>
+          <td>{{instruction.tradeDate}}</td>
+          <td>{{instruction.settlementDate}}</td>
+          <td>{{instruction.transactionType}}</td>
+          <td><button (click)="deleteInstruction(instruction.id)" class="btn btn-danger">Delete</button>
+              <button (click)="updateInstruction(instruction.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+              <button (click)="instructionDetails(instruction.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

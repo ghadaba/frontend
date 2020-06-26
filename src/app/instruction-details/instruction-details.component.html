@@ -1,0 +1,43 @@
+<h2>Instruction Details</h2> 
+
+<hr/>
+<div *ngIf="instruction">
+  <div *ngIf="instruction">
+    <div>
+      <label><b>secacc</b></label> {{instruction.secacc}}
+    </div>
+    <div>
+      <label><b>id_client </b></label>{{instruction.id_client}}
+    </div>
+    <div>
+      <label><b>instrument </b></label> {{instruction.instrument}}
+    </div>
+    <div>
+      <label><b>quantity </b></label> {{instruction.quantity}}
+    </div>
+    <div>
+      <label><b>price </b></label> {{instruction.price}}
+    </div>
+    <div>
+      <label><b>id_currency </b></label> {{instruction.Id_currency}}
+    </div>
+    <div>
+      <label><b>Isin </b></label> {{instruction.Isin}}
+    </div>  
+    <div>
+      <label><b>tradeDate </b></label> {{instruction.tradeDate}}
+    </div>  
+     
+    <div>
+      <label><b>settlementDate</b></label>{{instruction.settlementDate}}
+    </div>  
+    <div>
+      <label><b>transactionType </b></label>{{instruction.transactionType}}
+    </div> 
+  </div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Instruction List</button><br>
+
+

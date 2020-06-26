@@ -1,0 +1,55 @@
+<h3>Update Instruction</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="secacc">secacc</label>
+      <input type="text" class="form-control" id="secacc" required [(ngModel)]="instruction.secacc" name="secacc">
+    </div>
+    <div class="form-group">
+      <label for="id_client">id_client</label>
+      <input type="text" class="form-control" id="id_client" required [(ngModel)]="instruction.id_client" name="id_client">
+    </div>
+    <div class="form-group">
+      <label for="id_transaction">id_transaction</label>
+      <input type="text" class="form-control" id="id_transaction" required [(ngModel)]="instruction.id_transaction" name="id_transaction">
+    </div>
+    <div class="form-group">
+      <label for="instrument">instrument</label>
+      <input type="text" class="form-control" id="instrument" required [(ngModel)]="instruction.instrument" name="instrument">
+    </div>
+    <div class="form-group">
+      <label for="quantity">quantity</label>
+      <input type="text" class="form-control" id="quantity" required [(ngModel)]="instruction.quantity" name="quantity">
+    </div>
+    <div class="form-group">
+      <label for="price">price</label>
+      <input type="text" class="form-control" id="price" required [(ngModel)]="instruction.price" name="price">
+    </div>
+    <div class="form-group">
+      <label for="Id_currency">Id_currency</label>
+      <input type="text" class="form-control" id="Id_currency" required [(ngModel)]="instruction.Id_currency" name="Id_currency">
+    </div>
+
+    <div class="form-group">
+      <label for="Isin">Isin</label>
+      <input type="text" class="form-control" id="Isin" required [(ngModel)]="instruction.Isin" name="Isin">
+    </div>
+    <div class="form-group">
+      <label for="tradeDate">tradeDate</label>
+      <input type="text" class="form-control" id="tradeDate" required [(ngModel)]="instruction.tradeDate" name="tradeDate">
+    </div>
+    <div class="form-group">
+      <label for="settlementDate">settlementDate</label>
+      <input type="text" class="form-control" id="settlementDate" required [(ngModel)]="instruction.settlementDate" name="settlementDate">
+    </div>
+
+    <div class="form-group">
+      <label for="transactionType">transactionType</label>
+      <input type="text" class="form-control" id="transactionType" required [(ngModel)]="instruction.settlementDate" name="transactionType">
+    </div>
+
+  
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
